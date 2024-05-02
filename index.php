@@ -30,7 +30,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fa-solid fa-book-open-reader"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">COA<sup>2023 </sup></div>
+                <div class="sidebar-brand-text mx-3">GEMIF<sup>2024 </sup></div>
             </a>
 
             <!-- Divider -->
