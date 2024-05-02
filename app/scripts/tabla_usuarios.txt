@@ -1,0 +1,8 @@
+/* este es el script para la tabla de usuarios */
+
+CREATE TABLE sig_usuarios (
+  idUsuarios INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  loginUsuario VARCHAR(20) NULL,
+  passwordUsuario VARCHAR(20) NULL,
+  PRIMARY KEY(idUsuarios)
+);
