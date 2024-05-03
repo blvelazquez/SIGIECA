@@ -1,5 +1,5 @@
 <?php 
-require_once("app/views/header.php");
+require_once("app/views/headerfooter/header.php");
 ?>
 
     <!-- Begin Page Content -->
@@ -9,4 +9,4 @@ require_once("app/views/header.php");
 
         </div>
     </div>
-<?php require_once("app/views/header.php")?>
+<?php require_once("app/views/headerfooter/header.php")?>
