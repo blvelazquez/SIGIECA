@@ -3,9 +3,9 @@
 
     class db_local {
         private $host = "localhost";
-        private $dbname = 'moodle';
-        private $user = 'usermoodle';
-        private $password = '$userMoodle.';
+        private $dbname = 'sigiecadb';
+        private $user = 'sigiadmin';
+        private $password = 'sigiadmin1+';
         private $PDO;
     
         public function conexion() {
@@ -20,9 +20,9 @@
 
     class db_server {
         private $host = "localhost";
-        private $dbname = 'moodle';
-        private $user = 'moodle';
-        private $password = 'm00dle2023_;';
+        private $dbname = '';
+        private $user = '';
+        private $password = '';
         private $PDO;
     
         public function conexion() {
