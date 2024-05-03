@@ -1,5 +1,8 @@
+/*Este es el script para crear nuestro usuario administrador de la DB */
+
+
 CREATE USER 'sigiadmin'@'localhost' IDENTIFIED BY 'sigiadmin1+';
 
-GRANT ALL PRIVILEGES ON sigieca.* TO 'sigiadmin'@'localhost';
+GRANT ALL PRIVILEGES ON sigiecadb.* TO 'sigiadmin'@'localhost';
 
 FLUSH PRIVILEGES;
