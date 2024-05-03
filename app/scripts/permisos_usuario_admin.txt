@@ -1,0 +1,7 @@
+
+GRANT Alter routine ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';
+GRANT Create routine ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';
+GRANT Create temporary tables ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';
+GRANT Execute ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';
+GRANT Lock tables ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';
+GRANT Grant option ON sigiecadb.sig_usuarios TO 'sigiadmin'@'localhost';

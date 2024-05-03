@@ -1,0 +1,5 @@
+CREATE USER 'sigiadmin'@'localhost' IDENTIFIED BY 'sigiadmin1+';
+
+GRANT ALL PRIVILEGES ON sigieca.* TO 'sigiadmin'@'localhost';
+
+FLUSH PRIVILEGES;
