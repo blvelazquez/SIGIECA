@@ -16,6 +16,13 @@
             $stament->bindParam(":password", $password, PDO::PARAM_STR);
             return ($stament->execute()) ? $this->PDO->lastInsertId() : false ;
         }
-       
+
+        public function update(){
+
+        }
+      
+        public function delete(){
+
+        }
     }
 ?>
