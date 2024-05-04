@@ -4,5 +4,13 @@ CREATE TABLE sig_usuarios (
   idUsuarios INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   loginUsuario VARCHAR(20) NULL,
   passwordUsuario VARCHAR(20) NULL,
+  email VARCHAR(45) NULL,
+  nombreusuario VARCHAR(45) NULL,
+  apellidoPaternoUsuario VARCHAR(45) NULL,
+  apellidoMaternoUsuario VARCHAR(45) NULL,
+  fechaRegistroUsuario DATE NULL,
+  ultimoAccesoUsuario INTEGER UNSIGNED NULL,
+  rolUsuario VARCHAR(20) NULL,
   PRIMARY KEY(idUsuarios)
 );
+
