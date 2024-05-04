@@ -8,11 +8,15 @@
             $this->model = new usuariosModel();
         }
        
-        public function save($login, $password){
-            print($login);
-            print($password);
-            $id = $this->model->insert($login, $password);
-            return ($id!=false) ? '' : false;        
+        public function guardar($login, $password){
+            if($login != '' && $password != ''){
+                print($login);
+                print($password);
+                $id = $this->model->insert($login, $password);
+                return ($id!=false) ? '' : false;        
+            }
+
+
         }
     }
 ?>

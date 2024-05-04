@@ -31,7 +31,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fa-solid fa-book-open-reader"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">COA<sup>2023 </sup></div>
+                <div class="sidebar-brand-text mx-3">SIGIECA<sup>2024 </sup></div>
             </a>
 
             <!-- Divider -->
@@ -56,14 +56,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="#views/colaboraCarousel/colabora">
                     <i class="fa-regular fa-address-book"></i>
-                    <span>Carrusel Colaboradores</span></a>
+                    <span>Solicitudes</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="#views/courseCarousel/course">
                     <i class="fa-solid fa-file-signature"></i>
-                    <span>Carrusel Materias</span></a>
+                    <span>Planteles</span></a>
             </li>            
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -71,13 +71,15 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Ejemplo</span>
+                    <span>Catálogos</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Componentes:</h6>
-                        <a class="collapse-item" href="app/views/courseCarousel/carousel.php" target="_blank">Materias</a>
-                        <a class="collapse-item" href="app/views/colaboraCarousel/carousel.php" target="_blank">Colaboradores</a>
+                        <a class="collapse-item" href="" >Usuarios</a>
+                        <a class="collapse-item" href="" >Roles</a>
+                        <a class="collapse-item" href="" >Proveedores</a>
+                        <a class="collapse-item" href="" >Servicios</a>
                     </div>
                 </div>
             </li>            
