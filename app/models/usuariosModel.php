@@ -17,6 +17,11 @@
             return ($stament->execute()) ? $this->PDO->lastInsertId() : false ;
         }
 
+        public function list(){
+            $stament = $this->PDO->prepare("SELECT * FROM sig_usuarios");
+            return ($stament->execute()) ? $stament->fetchAll() : false;
+        }
+
         public function update(){
 
         }
