@@ -76,9 +76,9 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Componentes:</h6>
-                        <a class="collapse-item" href="" >Usuarios</a>
+                        <a class="collapse-item" href="#views/usuarios/listaUsuarios" >Usuarios</a>
                         <a class="collapse-item" href="" >Roles</a>
-                        <a class="collapse-item" href="" >Proveedores</a>
+                        <a class="collapse-item" href="#views/proveedores/proveedores" >Proveedores</a>
                         <a class="collapse-item" href="" >Servicios</a>
                     </div>
                 </div>

@@ -15,8 +15,10 @@
                 $id = $this->model->insert($login, $password);
                 return ($id!=false) ? '' : false;        
             }
-
-
+        }
+        
+        public function list(){
+            return ($this->model->list()) ? $this->model->list() : false;
         }
     }
 ?>
