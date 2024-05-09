@@ -3,22 +3,19 @@
 
     class usuariosController{
         private $model;
+        private $location;
+
 
         public function __construct(){
             $this->model = new usuariosModel();
+            $this->location = "Location:../../../index.php#views/usuarios/listaUsuarios";
         }
        
-        public function guardar($login, $password){
-            if($login != '' && $password != ''){
-                print($login);
-                print($password);
-                $id = $this->model->insert($login, $password);
-                return ($id!=false) ? '' : false;        
-            }
-        }
         
         public function list(){
             return ($this->model->list()) ? $this->model->list() : false;
         }
+
+       
     }
 ?>

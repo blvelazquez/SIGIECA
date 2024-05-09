@@ -4,6 +4,7 @@
     
     $obj = new usuariosController();
     $data = $obj->list();
+    // print_r($data);
 ?>
 
 <div class="py-3 px-4">
@@ -18,6 +19,7 @@
 <table class="table table-sm table-striped table-hover mt-4">
     <thead >
         <tr>
+            <th scope="col" class="col-sm-1">id</th>
             <th scope="col" class="col-sm-1">Usuario</th>
             <th scope="col" class="col-sm-3">Nombre</th>
             <th scope="col" class="col-sm-2">Email</th>
@@ -29,7 +31,8 @@
     <tbody class="table-group-divider">
         <?php if($data): ?>
             <?php foreach($data as $resp): ?>
-                <tr>
+                <tr id= <?=$resp['idUsuarios'] ?>>
+                    <td> <?=$resp['idUsuarios'] ?></td>
                     <td><?=$resp['loginUsuario'] ?></td>
                     <td><?=$resp['nombreusuario'] ?> <?=$resp['apellidoPaternoUsuario'] ?> <?=$resp['apellidoMaternoUsuario'] ?></td>
                     <td><?=$resp['email'] ?></td>
@@ -38,7 +41,8 @@
                     <td><?=$resp['rolUsuario'] ?></td>
                     <td>
                         <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-danger ml-2" data-id="<?= $resp['idUsuarios'] ?>"><i class="fas fa-trash"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning edit-btn" ><i class="fas fa-pencil-alt"></i></a>
+                            <a href="#" class="btn btn-sm btn-danger ml-2"><i class="fas fa-trash"></i></a>
                         </div>
                     </td>                    
                 </tr>
