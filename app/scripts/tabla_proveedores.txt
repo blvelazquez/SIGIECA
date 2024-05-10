@@ -1,0 +1,9 @@
+CREATE TABLE sig_proveedores (
+  idProveedor INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Importe_Contratado DECIMAL NULL,
+  Fecha_Contrato DATE NULL,
+  Proveedor VARCHAR(45) NULL,
+  Numero_Proveedor INTEGER UNSIGNED NULL,
+  Factura VARCHAR(20) NULL,
+  PRIMARY KEY(idProveedor)
+);
