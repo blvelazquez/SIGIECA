@@ -35,5 +35,5 @@ require_once("app/views/headerfooter/header.php");
                 </script>        
 
     </div>
-
+<?php require_once("app/views/usuarios/deleteModalUsuarios.php"); ?>
 <?php require_once("app/views/headerfooter/footer.php")?>

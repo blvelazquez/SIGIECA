@@ -17,7 +17,7 @@ $obj = new usuariosController();
                     <h5 class="modal-title fs-5"> <strong>Registro de Usuarios</strong></h5>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="app/views/usuarios/store.php" method="post" enctype="multipart/form-data">
                         <fieldset class="border p-2 mb-3">
                             <legend class="w-auto h6 text-dark">Información Personal </legend>
                             <div class="mb-2 row">
