@@ -14,62 +14,67 @@ $obj = new usuariosController();
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-info text-white">
-                    <h5> <strong> Registro Usuarios</strong> </h5>            
+                    <h5 class="modal-title fs-5"> <strong>Registro de Usuarios</strong></h5>
                 </div>
                 <div class="modal-body">
-                    <form action="save.php" method="post">
+                    <form action="" method="post" enctype="multipart/form-data">
                         <fieldset class="border p-2 mb-3">
-                            <legend class="w-auto h6 text-darh">Información Personal</legend>
-                            <div class="row">
+                            <legend class="w-auto h6 text-dark">Información Personal </legend>
+                            <div class="mb-2 row">
                                 <div class="col">
-                                    <label for="fname">Apellido Paterno:</label>
-                                    <input type="text" name="fname" id="fname" class="form-control" require>
+                                    <label for="fname" class="form-label">Apellido Paterno:</label>
+                                    <input type="text" name="fname" id="fname" class="form-control" required>
                                 </div>
                                 <div class="col">
-                                    <label for="lname">Apellido Materno:</label>
-                                    <input type="text" name="lname" id="lname" class="form-control">
+                                    <label for="lname" class="form-label">Apellido Materno:</label>
+                                    <input type="text" name="lname" id="lname" class="form-control" >
                                 </div>
                                 <div class="col">
-                                    <label for="name">Nombre:</label>
-                                    <input type="text" name="name" id="name" class="form-control" require>
+                                    <label for="name" class="form-label">Nombre(s):</label>
+                                    <input type="text" name="name" id="name" class="form-control" required>
                                 </div>
                             </div>
                         </fieldset>
+
                         <fieldset class="border p-2 mb-3">
-                            <legend class="w-auto h6 text-darh">Cuenta</legend>
-                            <div class = "row">
+                            <legend class="w-auto h6 text-dark">Cuenta </legend>
+                            <div class="mb-2 row">
                                 <div class="col">
-                                    <label for="user">Usuario:</label>
-                                    <input type="text" name="user", id="user" class="form-control" require>
+                                    <label for="user" class="form-label">Usuario:</label>
+                                    <input name="user" id="user" class="form-control" required></input>
+                                </div>                    
+                                <div class="col">
+                                    <label for="pass" class="form-label">Password:</label>
+                                    <input type="password" name="pass" id="pass" class="form-control" required></input>
                                 </div>
                                 <div class="col">
-                                    <label for="pass">Password:</label>
-                                    <input type="password" name="pass", id="pass" class="form-control" require>
-                                </div>
-                                <div class="col">
-                                    <label for="email">Correo Electrónico:</label>
-                                    <input type="email" name="email", id="email" class="form-control" placeholder="correo@example.com" require>
-                                </div>
+                                    <label for="email" class="form-label">Correo Electrónico:</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="correo@example.com" required>
+                                </div>                        
                             </div>
-                        </fieldset>                            
+                        </fieldset>
+
                         <div class="row mb-3">
                             <div class="col">
-                                <label for="rol">Rol:</label>
+                                <label for="rol" class="form-label">Rol:</label>
                                 <select name="rol" id="rol" class="form-control">
                                     <option value="0">Editor</option>
                                     <option value="1">Consultor</option>
-                                    <option value="2">Administrador</option>
+                                    <option value="1">Administrador</option>
                                 </select>
                             </div>
                             <div class="col"></div>
                             <div class="col"></div>
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn btn-primary">Guardar</button>
+
+                        <div class="d-flex justify-content-end modal-footer">
+                            <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Guardar</button>
                         </div>
+
                     </form>
                 </div>
             </div>
+        </div>
     </div>
 </div>
 
