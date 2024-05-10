@@ -9,7 +9,7 @@ CREATE TABLE sig_usuarios (
   apellidoPaternoUsuario VARCHAR(45) NULL,
   apellidoMaternoUsuario VARCHAR(45) NULL,
   fechaRegistroUsuario DATE NULL,
-  ultimoAccesoUsuario INTEGER UNSIGNED NULL,
+  ultimoAccesoUsuario DATE NULL,
   rolUsuario VARCHAR(20) NULL,
   PRIMARY KEY(idUsuarios)
 );
