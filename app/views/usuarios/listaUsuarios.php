@@ -12,7 +12,7 @@
 <hr>
 <div class="row justify-content-end">
     <div class="col-auto">
-        <a href="#views/usuarios/usuarios" class="btn btn-primary" ><i class="fas fa-plus-circle"></i> Agregar Registro</a>
+        <a href="#views/usuarios/usuariosForm" class="btn btn-primary" ><i class="fas fa-plus-circle"></i> Agregar Registro</a>
     </div>
 </div>
 <table class="table table-sm table-striped table-hover mt-4">
