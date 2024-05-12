@@ -1,9 +1,3 @@
-<?php
-
-require_once(__DIR__ . "/../../controllers/usuariosController.php");
-$obj = new usuariosController();
-
-?>
 <div class="container">
     <div class="row justify-content-end">
         <div class="col-auto">
@@ -68,6 +62,7 @@ $obj = new usuariosController();
                         </div>
 
                         <div class="d-flex justify-content-end modal-footer">
+                            <input type="hidden" name="accion" value="guardar">
                             <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Guardar</button>
                         </div>
 
