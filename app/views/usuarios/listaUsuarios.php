@@ -15,7 +15,7 @@
         <a href="#views/usuarios/usuariosForm" class="btn btn-primary" ><i class="fas fa-plus-circle"></i> Agregar Registro</a>
     </div>
 </div>
-<table class="table table-sm table-striped table-hover mt-4">
+<table class="table table-sm table-striped table-hover mt-4" >
     <thead >
         <tr>
             <th scope="col" class="col-sm-1">id</th>
@@ -40,7 +40,7 @@
                     <td><?=$resp['rolUsuario'] ?></td>
                     <td>
                         <div class="btn-group">
-                            <a href="#views/usuarios/editUsuarios" class="btn btn-sm btn-warning edit-btn" data-id="<?= $resp['idUsuarios'] ?>"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning edit-btn" ><i class="fas fa-pencil-alt"></i></a>
                             <a href="#" class="btn btn-sm btn-danger ml-2" data-toggle="modal" data-target="#deleteModalUsuarios" data-id="<?= $resp['idUsuarios']?>"><i class="fas fa-trash"></i></a>
                         </div>
                     </td>                    
@@ -50,4 +50,3 @@
     </tbody>
 
 </table>
-

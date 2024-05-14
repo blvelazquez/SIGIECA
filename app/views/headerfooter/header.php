@@ -17,9 +17,8 @@
     <!-- script sections -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
 
-
-
 </head>
+
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -79,7 +78,7 @@
                         <a class="collapse-item" href="#views/usuarios/listaUsuarios" >Usuarios</a>
                         <a class="collapse-item" href="" >Roles</a>
                         <a class="collapse-item" href="#views/proveedores/listaProveedores" >Proveedores</a>
-                        <a class="collapse-item" href="" >Servicios</a>
+                        <a class="collapse-item" href="app/views/usuarios/table.php" >Servicios</a>
                     </div>
                 </div>
             </li>            

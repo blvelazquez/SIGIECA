@@ -23,6 +23,10 @@
             return ($id!= false) ? header($this->location) : false;
         }
 
-       
+        public function delete($idUsuario){
+            $id = $this->model->delete($idUsuario);
+            return($id!=false) ? header($this->location) : false;
+        }
+
     }
 ?>

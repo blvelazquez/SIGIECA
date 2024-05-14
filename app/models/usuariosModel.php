@@ -32,6 +32,12 @@
             return ($stament->execute()) ? $stament->fetchAll() : false;
         }
 
+        public function delete($idUsuario){
+            $stament = $this->PDO->prepare("DELETE FROM sig_usuarios where idUsuarios = :id");
+            $stament->bindParam(":id", $idUsuario, PDO::PARAM_STR);
+            return($stament->execute()) ? $idUsuario : false ;
+        }
+
        
     }
 ?>

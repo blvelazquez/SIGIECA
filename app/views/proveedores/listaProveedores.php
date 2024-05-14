@@ -35,7 +35,7 @@
                     <td>
                         <div class="btn-group">
                             <a href="#" class="btn btn-sm btn-warning edit-btn" ><i class="fas fa-pencil-alt"></i></a>
-                            <a href="#" class="btn btn-sm btn-danger ml-2"><i class="fas fa-trash"></i></a>
+                            <a href="#" class="btn btn-sm btn-danger ml-2" data-toggle="modal" data-target="#deleteModalProveedores" data-id="<?= $resp['idProveedor']?>"><i class="fas fa-trash"></i></a>
                         </div>
                     </td>                    
                 </tr>
