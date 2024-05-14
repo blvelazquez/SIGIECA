@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="d-flex justify-content-end modal-footer">
-                            <input type="hidden" name="accion" value="guardar">
+                            <input type="hidden" name='accion' id='accion' value='guardar'>
                             <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Guardar</button>
                         </div>
 
