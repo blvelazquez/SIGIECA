@@ -46,8 +46,17 @@ require_once("app/views/headerfooter/header.php");
             let inputId = $('.modal-footer #id');
             inputId.val(id);
         });
+
+        $('#deleteModalProveedores').on('shown.bs.modal', event =>{
+            let button = event.relatedTarget;
+            let id = button.getAttribute('data-id');
+            
+            let inputId = $('.modal-footer #id');
+            inputId.val(id);
+        });
     });
 </script>
+
 
 <?php require_once("app/views/headerfooter/footer.php")?>
 
