@@ -21,6 +21,11 @@
 
         }
 
+        public function delete($idProveedor){
+            $id= $this->model->delete($idProveedor);
+            return ($id!= false) ? header($this->location) : false; 
+        }
+
         // public function save($fname, $lname, $name, $user,$pass, $email, $rol){
         //     $dateRegister = date("y-m-d");
         //     $lastAcces = date("y-m-d");

@@ -42,5 +42,13 @@
             return ($stament->execute()) ? $this->PDO->lastInsertId() : false;
 
        }
+
+       public function delete($idProveedor){
+        $stament = $this->PDO->prepare("DELETE FROM sig_proveedores where idProveedor = :idProveedor");
+        $stament->bindParam(":idProveedor", $idProveedor, PDO::PARAM_STR);
+            return($stament->execute()) ? $idProveedor : false ;
+        // echo($idProveedor);
+        // echo('Si llegue al delete');
+       }
     }
 ?>
