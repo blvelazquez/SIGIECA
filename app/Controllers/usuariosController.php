@@ -28,5 +28,14 @@
             return($id!=false) ? header($this->location) : false;
         }
 
+        public function show($idUsuario){
+            return($this->model->show($idUsuario)!= false) ? $this->model->show($idUsuario) : false;
+        }
+
+        public function update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces){
+            $id = $this->model->update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces);
+            return($id != false) ? header($this->location) : false;
+        }
+
     }
 ?>

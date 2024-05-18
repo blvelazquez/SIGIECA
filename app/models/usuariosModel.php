@@ -38,6 +38,31 @@
             return($stament->execute()) ? $idUsuario : false ;
         }
 
+        public function show($idUsuario){
+            $stament = $this->PDO->prepare("SELECT * FROM sig_usuarios where idUsuarios = :id");
+            $stament->bindParam(":id", $idUsuario);
+            return ($stament->execute()) ? $stament->fetchAll() : false;
+        }
+
+        public function update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces){
+            $stament = $this->PDO->prepare("UPDATE sig_usuarios
+            SET loginUsuario = :user, passwordUsuario = :pass, email = :email, nombreusuario = :name,
+            apellidoPaternoUsuario = :fname, apellidoMaternoUsuario = :lname, fechaRegistroUsuario = :fechaReg, 
+            ultimoAccesoUsuario = :fechaAcces, rolUsuario = :rol WHERE idUsuarios = :idUsuario");
+            $stament->bindParam(":user", $user, PDO::PARAM_STR);
+            $stament->bindParam(":pass", $pass, PDO::PARAM_STR);
+            $stament->bindParam(":email", $email, PDO::PARAM_STR);
+            $stament->bindParam(":name", $name, PDO::PARAM_STR);
+            $stament->bindParam(":fname", $fname, PDO::PARAM_STR);
+            $stament->bindParam(":lname", $lname, PDO::PARAM_STR);
+            $stament->bindParam(":fechaReg", $fechaReg, PDO::PARAM_STR);
+            $stament->bindParam(":fechaAcces", $fechaAcces, PDO::PARAM_STR);
+            $stament->bindParam(":rol", $rol, PDO::PARAM_STR);
+            $stament->bindParam(":idUsuario", $idUsuario, PDO::PARAM_STR);
+            
+            return($stament->execute()) ? $idUsuario : false;
+        }
+
        
     }
 ?>

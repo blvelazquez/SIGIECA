@@ -4,7 +4,8 @@ require_once("app/views/headerfooter/header.php");
 
     <!-- Begin Page Content -->
     <div class="container-fluid">
-        <div id="dynamic-content"></div>
+        <div id="dynamic-content">
+        </div>
         <script>
                 // Función para cargar el contenido de la página según la ruta hash
                 function loadPageFromHash() {
