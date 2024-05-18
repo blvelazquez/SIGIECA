@@ -11,6 +11,8 @@
             $obj->delete($_POST['id']);
             break;
         case 'actualizar':
+            $obj->update($_POST['id'], $_POST['fname'], $_POST['lname'], $_POST['name'], $_POST['user'], 
+                        $_POST['pass'], $_POST['email'], $_POST['rol'], $_POST['fechaRegistroUsuario'], $_POST['ultimoAccesoUsuario'] );
         break;
         default:
             echo('La opción  no es valida');
