@@ -1,5 +1,17 @@
 <?php 
+// session_start();
+
+// // Verificar si la sesión está activa
+// if (!isset($_SESSION['user_id'])) {
+//     // Si no hay sesión, redirigir al login
+//     header("Location: app/views/login/login.php");
+//     exit();
+// }
+
+
 require_once("app/views/headerfooter/header.php");
+require_once("app/views/headerfooter/body.php");
+
 ?>
 
     <!-- Begin Page Content -->
