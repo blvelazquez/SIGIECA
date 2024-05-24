@@ -26,6 +26,18 @@
             return ($id!= false) ? header($this->location) : false; 
         }
 
+        public function show($idProveedor){
+           //echo($idProveedor);
+           // echo('Ya llegue al controler');
+           return($this->model->show($idProveedor)!= false) ? $this->model->show($idProveedor) : false;
+
+        }
+
+        public function update($id, $numpro, $provname, $replegal){
+            $id = $this->model->update($id, $numpro, $provname, $replegal);
+            return($id != false) ? header($this->location) : false;
+        }
+
         // public function save($fname, $lname, $name, $user,$pass, $email, $rol){
         //     $dateRegister = date("y-m-d");
         //     $lastAcces = date("y-m-d");
