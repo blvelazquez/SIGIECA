@@ -4,6 +4,7 @@
 
     // Dividir la cadena en partes usando el punto como delimitador
     $parts = explode('.', $_GET['id']);
+    //print_r($parts);
     $idUsuario = $parts[0];
 
     $data = $obj->show($idUsuario);
@@ -22,7 +23,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title fs-5"> <strong>Actualizar de Usuario</strong></h5>
+                    <h5 class="modal-title fs-5"> <strong>Actualizar Usuario</strong></h5>
                 </div>
                 <div class="modal-body">
                     <form action="app/views/usuarios/store.php" method="post" enctype="multipart/form-data">

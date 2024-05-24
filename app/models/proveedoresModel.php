@@ -50,5 +50,23 @@
         // echo($idProveedor);
         // echo('Si llegue al delete');
        }
+
+       public function show($idProveedor){
+        $stament = $this->PDO->prepare("SELECT * FROM sig_proveedores where idProveedor = :id");
+        $stament->bindParam(":id", $idProveedor);
+        return ($stament->execute()) ? $stament->fetchAll() : false;
+        }
+
+        public function update($id, $numpro, $provname, $replegal){
+            $stament = $this->PDO->prepare("UPDATE sig_proveedores
+            SET Numero_Proveedor = :numpro, Proveedor = :provname, Representante_Legal = :replegal
+            WHERE idProveedor = :id");
+            $stament->bindParam(":numpro", $numpro, PDO::PARAM_STR);
+            $stament->bindParam(":provname", $provname, PDO::PARAM_STR);
+            $stament->bindParam(":replegal", $replegal, PDO::PARAM_STR);
+            $stament->bindParam(":id", $id, PDO::PARAM_STR);
+            
+            return($stament->execute()) ? $id : false;
+        }
     }
 ?>

@@ -40,7 +40,7 @@
                     <td><?=$resp['rolUsuario'] ?></td>
                     <td>
                         <div class="btn-group">
-                            <a href="#views/usuarios/editForm.php?id=<?= $resp['idUsuarios']?>" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="#views/usuarios/editForm.php?id=<?= $resp['idUsuarios']?>" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   
                             <a href="#" class="btn btn-sm btn-danger ml-2" data-toggle="modal" data-target="#deleteModalUsuarios" data-id="<?= $resp['idUsuarios']?>"><i class="fas fa-trash"></i></a>
                         </div>
                     </td>                    

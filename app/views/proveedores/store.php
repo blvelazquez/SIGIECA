@@ -12,6 +12,8 @@
             $obj->delete($_POST['id']);
             break;
         case'actualizar':
+            //echo($_POST['id'].' '.$_POST['numpro'].' '.$_POST['provname'].' '.$_POST['replegal']);
+            $obj->update($_POST['id'], $_POST['numpro'], $_POST['provname'], $_POST['replegal']);
             break;
     }
     
