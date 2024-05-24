@@ -1,5 +1,5 @@
 <?php
-
+//Este es un comentario
     require_once(__DIR__ . "/../../controllers/proveedoresController.php");
     
     $obj = new proveedoresController();
