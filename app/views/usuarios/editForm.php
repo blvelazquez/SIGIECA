@@ -1,4 +1,6 @@
 <?php
+
+//Este es un comentario
     require_once(__DIR__ . "/../../controllers/usuariosController.php");
     $obj = new usuariosController();
 
