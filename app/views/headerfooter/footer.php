@@ -35,8 +35,12 @@
                 </div>
                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="../dashboard/app/views/logout/logout.php">Logout</a>
+                    <form action="app/views/login/store.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name='log' id='log' value='out'>
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                        <!-- <a class="btn btn-primary" href="../sigieca/app/views/login/store.php?log='out'">Logout</a> -->
+                    </form>
                 </div>
             </div>
         </div>

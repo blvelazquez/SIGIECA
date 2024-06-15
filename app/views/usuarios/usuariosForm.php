@@ -1,3 +1,11 @@
+<?php
+
+    require_once(__DIR__ . "/../../controllers/rolController.php");
+    
+    $obj = new rolController();
+    $data = $obj->list();
+?>
+
 <div class="container">
     <div class="row justify-content-end">
         <div class="col-auto">
@@ -51,10 +59,11 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="rol" class="form-label">Rol:</label>
+
                                 <select name="rol" id="rol" class="form-control">
-                                    <option value="0">Editor</option>
-                                    <option value="1">Consultor</option>
-                                    <option value="1">Administrador</option>
+                                    <?php foreach($data as $resp): ?>
+                                        <option value="<?=$resp['idRol'] ?>"><?=$resp['nombre_Rol'] ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                             <div class="col"></div>
