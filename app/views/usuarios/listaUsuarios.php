@@ -37,7 +37,7 @@
                     <td><?=$resp['email'] ?></td>
                     <td><?=$resp['fechaRegistroUsuario'] ?></td>
                     <td><?=$resp['ultimoAccesoUsuario'] ?></td>
-                    <td><?=$resp['rolUsuario'] ?></td>
+                    <td><?=$resp['nombre_Rol'] ?></td>
                     <td>
                         <div class="btn-group">
                             <a href="#views/usuarios/editForm.php?id=<?= $resp['idUsuarios']?>" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   

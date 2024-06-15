@@ -2,7 +2,9 @@
 
 //Este es un comentario
     require_once(__DIR__ . "/../../controllers/usuariosController.php");
+    require_once(__DIR__ . "/../../controllers/rolController.php");
     $obj = new usuariosController();
+    $objRol = new rolController();
 
     // Dividir la cadena en partes usando el punto como delimitador
     $parts = explode('.', $_GET['id']);
@@ -12,6 +14,10 @@
     $data = $obj->show($idUsuario);
     $resp = $data[0];
     // print_r($resp);
+
+    
+    $dataRol = $objRol->list();
+    // print_r($dataRol);
 ?>
 
 
@@ -72,10 +78,11 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="rol" class="form-label">Rol:</label>
+
                                 <select name="rol" id="rol" class="form-control">
-                                    <option value="0" <?= $resp['rolUsuario'] == 0 ? 'selected' : '' ?>>Editor</option>
-                                    <option value="1" <?= $resp['rolUsuario'] == 1 ? 'selected' : '' ?>>Consultor</option>
-                                    <option value="2" <?= $resp['rolUsuario'] == 2 ? 'selected' : '' ?>>Administrador</option>
+                                    <?php foreach($dataRol as $respRol):?>
+                                        <option value="<?= $respRol['idRol']?>" <?= $resp['rolUsuario'] == $respRol['idRol'] ? 'selected' : ''?>><?= $respRol['nombre_Rol']?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                             <div class="col"></div>

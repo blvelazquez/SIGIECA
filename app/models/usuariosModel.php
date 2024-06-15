@@ -28,7 +28,10 @@
         }
 
         public function list(){
-            $stament = $this->PDO->prepare("SELECT * FROM sig_usuarios");
+            $stament = $this->PDO->prepare("SELECT usu.idUsuarios, usu.loginUsuario, usu.passwordUsuario,
+                                            usu.email, usu.nombreusuario, usu.apellidoPaternoUsuario, usu.apellidoMaternoUsuario,
+                                            usu.fechaRegistroUsuario, usu.ultimoAccesoUsuario, usu.rolUsuario, rol.nombre_Rol 
+                                            FROM sig_usuarios as usu inner join sig_rol as rol on rol.idRol = usu.rolUsuario");
             return ($stament->execute()) ? $stament->fetchAll() : false;
         }
 
