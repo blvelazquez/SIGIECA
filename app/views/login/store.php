@@ -10,7 +10,7 @@
                 $_SESSION['usuario'] = $_POST['usuario'];
                 header("Location:../../../index.php");
             }else{
-                echo('Error: usuario o passwrod incorrecto');
+                header("Location:login.php");
             }
             break;
         case 'out':

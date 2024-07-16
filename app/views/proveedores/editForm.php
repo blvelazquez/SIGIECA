@@ -9,7 +9,7 @@
 
     $data = $obj->show($idProveedor);
     $resp = $data[0];
-    print_r($resp);
+    // print_r($resp);
 ?>
 <div class="container">
     <div class="row justify-content-end">
