@@ -1,0 +1,13 @@
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Estructural');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Albañilería');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Acabados');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Cancelería');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Carpintería');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Hidráulica');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Sanitaria');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Eléctrica');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Gas');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Voz y Datos');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Video vigilancia');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Impermeabilizante');
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Instalación Especial');
