@@ -3,5 +3,5 @@ CREATE TABLE sig_rol (
   nombre_Rol VARCHAR(45) NULL,
   descripcion_Rol VARCHAR(100) NULL,
   permisos_Rol VARCHAR(20) NULL,
-  PRIMARY KEY(idUsuarios)
+  PRIMARY KEY(idRol)
 );
