@@ -9,7 +9,6 @@
     //     exit();
     // }
 
-
 require_once("app/views/headerfooter/header.php");
 require_once("app/views/headerfooter/body.php");
 
