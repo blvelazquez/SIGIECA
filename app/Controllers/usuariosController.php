@@ -15,10 +15,11 @@
             return ($this->model->list()) ? $this->model->list() : false;
         }
 
-        public function save($fname, $lname, $name, $user,$pass, $email, $rol){
+        public function save($fname, $lname, $name, $user, $pass, $email, $rol){
             $dateRegister = date("y-m-d");
             $lastAcces = date("y-m-d");
-            $id = $this->model->insert($fname, $lname, $name, $user,$pass, $email, $rol, $dateRegister, $lastAcces);
+            $pass = password_hash($pass, PASSWORD_BCRYPT);
+            $id = $this->model->insert($fname, $lname, $name, $user, $pass, $email, $rol, $dateRegister, $lastAcces);
 
             return ($id!= false) ? header($this->location) : false;
         }

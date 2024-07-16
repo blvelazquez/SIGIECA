@@ -59,9 +59,8 @@ $name = $_SESSION['usuario'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Componentes:</h6>
                         <a class="collapse-item" href="#views/usuarios/listaUsuarios" >Usuarios</a>
-                        <a class="collapse-item" href="" >Roles</a>
                         <a class="collapse-item" href="#views/proveedores/listaProveedores" >Proveedores</a>
-                        <a class="collapse-item" href="#views/login/login" >Login</a>
+                        <a class="collapse-item" href="#" >Planteles</a>
                     </div>
                 </div>
             </li>            
