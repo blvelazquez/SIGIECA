@@ -1,13 +1,21 @@
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Estructural');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Albañilería');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Acabados');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Cancelería');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Carpintería');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Hidráulica');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Sanitaria');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Eléctrica');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Gas');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Voz y Datos');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Video vigilancia');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Impermeabilizante');
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES (NULL, 'Instalación Especial');
+CREATE TABLE `sig_tipo_mantenimiento` (
+  `idTipomto` int(11) NOT NULL AUTO_INCREMENT,
+  `Descripción` varchar(60) NOT NULL,
+  PRIMARY KEY (`idTipomto`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ 
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES 
+(1, 'Estructural'),
+(2, 'Albañilería'),
+(3, 'Acabados'),
+(4, 'Cancelería'),
+(5, 'Carpintería'),
+(6, 'Hidráulica'),
+(7, 'Sanitaria'),
+(8, 'Eléctrica'),
+(10, 'Gas'),
+(11, 'Voz y Datos'),
+(12, 'Video vigilancia'),
+(13, 'Impermeabilizante'),
+(14, 'Instalación Especial');
