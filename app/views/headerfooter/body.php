@@ -43,9 +43,9 @@ $name = $_SESSION['usuario'];
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#" >Construcción</a>
+                        <a class="collapse-item" href="#views/solicitudes/construccion" >Construcción</a>
                         <a class="collapse-item" href="#views/solicitudes/inmuebles" >Mtto de Inmuebles</a>
-                        <a class="collapse-item" href="#" >Mtto de Equipo</a>
+                        <a class="collapse-item" href="#views/solicitudes/equipo" >Mtto de Equipo</a>
                     </div>
                 </div>
             </li>

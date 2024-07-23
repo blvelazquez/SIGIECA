@@ -1,21 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 16-07-2024 a las 05:53:33
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `sigiecadb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sig_tipo_mantenimiento`
+--
+
 CREATE TABLE `sig_tipo_mantenimiento` (
-  `idTipomto` int(11) NOT NULL AUTO_INCREMENT,
-  `Descripción` varchar(60) NOT NULL,
-  PRIMARY KEY (`idTipomto`)
+  `idTipomto` int(11) NOT NULL,
+  `Descripción` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
- 
-INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES 
+--
+-- Volcado de datos para la tabla `sig_tipo_mantenimiento`
+--
+
+INSERT INTO `sig_tipo_mantenimiento` (`idTipomto`, `Descripción`) VALUES
 (1, 'Estructural'),
-(2, 'Albañilería'),
-(3, 'Acabados'),
-(4, 'Cancelería'),
-(5, 'Carpintería'),
-(6, 'Hidráulica'),
-(7, 'Sanitaria'),
-(8, 'Eléctrica'),
+(2, 'Estructural'),
+(3, 'Albañilería'),
+(4, 'Acabados'),
+(5, 'Cancelería'),
+(6, 'Carpintería'),
+(7, 'Hidráulica'),
+(8, 'Sanitaria'),
+(9, 'Eléctrica'),
 (10, 'Gas'),
 (11, 'Voz y Datos'),
 (12, 'Video vigilancia'),
 (13, 'Impermeabilizante'),
 (14, 'Instalación Especial');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `sig_tipo_mantenimiento`
+--
+ALTER TABLE `sig_tipo_mantenimiento`
+  ADD PRIMARY KEY (`idTipomto`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `sig_tipo_mantenimiento`
+--
+ALTER TABLE `sig_tipo_mantenimiento`
+  MODIFY `idTipomto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
