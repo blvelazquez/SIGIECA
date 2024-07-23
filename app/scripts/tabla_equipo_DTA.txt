@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 20-07-2024 a las 19:07:35
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `sigiecadb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sig_equipo_dta`
+--
+
+CREATE TABLE `sig_equipo_dta` (
+  `idEquipoDTA` int(11) NOT NULL,
+  `Descripcion` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `sig_equipo_dta`
+--
+
+INSERT INTO `sig_equipo_dta` (`idEquipoDTA`, `Descripción`) VALUES
+(1, 'Máquinas de coser'),
+(2, 'Máquinas de carpintería'),
+(3, 'Máquinas de inyección'),
+(4, 'Compresores'),
+(5, 'Montacargas'),
+(6, 'Robots'),
+(7, 'CMM'),
+(8, 'CNC'),
+(9, 'Tornos'),
+(10, 'Fresadoras'),
+(11, 'Equipo de cocina'),
+(12, 'Máquinas de soldar'),
+(13, 'Máquinas de calzado'),
+(14, 'Estación PLC'),
+(15, 'Banco de neumática hidráulica');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
