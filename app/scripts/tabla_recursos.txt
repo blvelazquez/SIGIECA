@@ -1,0 +1,5 @@
+CREATE TABLE sig_recursos (
+  idRecurso INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  nombre_recurso VARCHAR(30) NULL,
+    PRIMARY KEY(idRecurso)
+);

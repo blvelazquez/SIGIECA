@@ -1,0 +1,4 @@
+CREATE TABLE sig_partidas (
+    idPartida INTEGER(10) UNSIGNED NOT NULL,
+    nombre_partida VARCHAR(100) NULL,
+    PRIMARY KEY(idPartida));
