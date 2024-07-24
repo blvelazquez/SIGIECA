@@ -9,8 +9,6 @@ $dataEsp = $esp->list();
 $dataMtto = $mtto->list();
 
 
-
-
     //llenar dos combos 
     //1 de sig_espacios
     //2 sig_tipo_mantenimiento
