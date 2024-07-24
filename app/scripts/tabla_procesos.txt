@@ -1,0 +1,4 @@
+CREATE TABLE sig_proceso (
+ idProceso VARCHAR(10) NOT NULL,
+  nombre_proceso VARCHAR(60) NULL,
+  PRIMARY KEY(idProceso));

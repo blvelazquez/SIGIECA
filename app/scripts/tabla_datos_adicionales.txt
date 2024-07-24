@@ -1,0 +1,9 @@
+CREATE TABLE sig_datos_adicionales (
+  idDatos_adic INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  idSolicitud VARCHAR(20)  NOT NULL,
+  idRecurso INTEGER,
+  num_fondo VARCHAR(20),
+  num_acuerdo VARCHAR(20),
+  sesion VARCHAR(40),
+    PRIMARY KEY(idDatos_adic)
+);

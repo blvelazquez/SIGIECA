@@ -1,0 +1,10 @@
+CREATE TABLE sig_solicitudes (
+  idSolicitud VARCHAR(20)  NOT NULL,
+  idUsuarios INTEGER,
+  idPartida INTEGER,
+  idProceso VARCHAR,
+  fecha_solicitud DATETIME,
+  tipo BOOL,
+  descripcion NVARCHAR(500),
+  PRIMARY KEY(idSolicitud)
+);

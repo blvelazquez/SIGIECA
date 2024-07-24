@@ -1,0 +1,12 @@
+CREATE TABLE sig_plantel (
+ idCCT VARCHAR(10) NOT NULL,
+  plantel VARCHAR(60) NULL,
+  calle_num VARCHAR(60) NULL,
+  colonia VARCHAR(60) NULL,
+  teléfono VARCHAR(15) NULL,
+  Fecha_SEG DATE,
+  idMunicipio INTEGER UNSIGNED NOT NULL,
+  codigo_postal INTEGER(5) NULL,
+  longitud DOUBLE NULL,
+  latitud DOUBLE NULL,
+  PRIMARY KEY(idCCT));
