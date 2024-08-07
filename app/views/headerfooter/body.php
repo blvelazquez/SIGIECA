@@ -36,18 +36,10 @@ $name = $_SESSION['usuario'];
 
             <!-- Nav Item - Charts Solicitudes-->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                <a class="nav-link collapsed" href="#views/solicitudes/listaSolicitudes">
                     <i class="fa-regular fa-address-book"></i>
                     <span>Solicitudes</span>
                 </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#views/solicitudes/construccion" >Construcción</a>
-                        <a class="collapse-item" href="#views/solicitudes/inmuebles" >Mtto de Inmuebles</a>
-                        <a class="collapse-item" href="#views/solicitudes/equipo" >Mtto de Equipo</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Charts -->
