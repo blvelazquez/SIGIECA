@@ -1,0 +1,75 @@
+--
+-- Estructura de tabla para la tabla `sig_municipios`
+--
+
+CREATE TABLE `sig_municipios` (
+  `idMunicipio` int(10) UNSIGNED NOT NULL,
+  `nombre_municipio` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `sig_municipios`
+--
+
+INSERT INTO `sig_municipios` (`idMunicipio`, `nombre_municipio`) VALUES
+(1, 'Abasolo'),
+(2, 'Acámbaro'),
+(4, 'Apaseo el Alto'),
+(5, 'Apaseo el Grande'),
+(6, 'Atarjea'),
+(7, 'Celaya'),
+(8, 'Manuel Doblado'),
+(9, 'Comonfort'),
+(10, 'Coroneo'),
+(11, 'Cortazar'),
+(12, 'Cuerámaro'),
+(13, 'Doctor Mora'),
+(14, 'Dolores Hidalgo Cuna de la Independencia Nacional'),
+(15, 'Guanajuato'),
+(16, 'Huanímaro'),
+(17, 'Irapuato'),
+(18, 'Jaral del Progreso'),
+(19, 'Jerécuaro'),
+(20, 'León'),
+(21, 'Moroleón'),
+(22, 'Ocampo'),
+(23, 'Pénjamo'),
+(24, 'Pueblo Nuevo'),
+(25, 'Purísima del Rincón'),
+(26, 'Romita'),
+(27, 'Salamanca'),
+(28, 'Salvatierra'),
+(29, 'San Diego de la Unión'),
+(30, 'San Felipe'),
+(31, 'San Francisco del Rincón'),
+(32, 'San José Iturbide'),
+(33, 'San Luis de la Paz'),
+(3, 'San Miguel de Allende'),
+(34, 'Santa Catarina'),
+(35, 'Santa Cruz de Juventino Rosas'),
+(36, 'Santiago Maravatio'),
+(37, 'Silao de la Victoria'),
+(38, 'Tarandacuao'),
+(39, 'Tarimoro'),
+(40, 'Tierra Blanca'),
+(41, 'Uriangato'),
+(42, 'Valle de Santiago'),
+(43, 'Victoria'),
+(44, 'Villagrán'),
+(45, 'Xichú'),
+(46, 'Yuriria');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `sig_municipios`
+--
+ALTER TABLE `sig_municipios`
+  ADD PRIMARY KEY (`idMunicipio`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
