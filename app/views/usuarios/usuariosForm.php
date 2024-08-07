@@ -5,6 +5,7 @@
     $obj = new rolController();
     $data = $obj->list();
 ?>
+ 
 
 <div class="container">
     <div class="row justify-content-end">
