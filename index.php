@@ -41,6 +41,14 @@ require_once("app/views/headerfooter/body.php");
                     xhr.onreadystatechange = function () {
                         if (xhr.readyState === 4 && xhr.status === 200) {
                             dynamicContent.innerHTML = xhr.responseText;
+                            $('#miTabla').DataTable({
+                                language: {
+                                    search: 'Buscar', // Cambia el texto del campo de búsqueda
+                                    lengthMenu: '_MENU_ Registros por página', // Cambia "entries per page" a "people per page"
+                                    info: 'Mostrando _START_ a _END_ de _TOTAL_ registros',
+                                    zeroRecords: 'No se encontraron registros', // Texto cuando no hay registros coincidentes
+                                }
+                            });
                         }
                     };
                     xhr.send();
@@ -52,6 +60,7 @@ require_once("app/views/headerfooter/body.php");
 <?php require_once("app/views/modals/deleteModal.php"); ?>
 <script>
     $(document).ready(function(){
+      
         $('#deleteModalUsuarios').on('shown.bs.modal', event =>{
             let button = event.relatedTarget;
             let id = button.getAttribute('data-id');
@@ -67,6 +76,7 @@ require_once("app/views/headerfooter/body.php");
             let inputId = $('.modal-footer #id');
             inputId.val(id);
         });
+
     });
 </script>
 

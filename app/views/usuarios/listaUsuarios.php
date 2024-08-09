@@ -15,7 +15,8 @@
         <a href="#views/usuarios/usuariosForm" class="btn btn-primary" ><i class="fas fa-plus-circle"></i> Agregar Registro</a>
     </div>
 </div>
-<table class="table table-sm table-striped table-hover mt-4" >
+<div class="dropdown-divider"></div>
+<table id="miTabla" class="table table-sm table-striped table-hover mt-4" >
     <thead >
         <tr>
             <th scope="col" class="col-sm-1">id</th>
@@ -25,6 +26,7 @@
             <th scope="col" class="col-sm-3">Fecha de Registro</th>
             <th scope="col" class="col-sm-2">Último Acceso</th>
             <th scope="col" class="col-sm-1">Rol</th>
+            <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </thead>
     <tbody class="table-group-divider">
@@ -48,5 +50,17 @@
             <?php endforeach; ?>
         <?php endif; ?>
     </tbody>
+    <tfoot>
+        <tr>
+            <th scope="col" class="col-sm-1">id</th>
+            <th scope="col" class="col-sm-1">Usuario</th>
+            <th scope="col" class="col-sm-3">Nombre</th>
+            <th scope="col" class="col-sm-2">Email</th>
+            <th scope="col" class="col-sm-3">Fecha de Registro</th>
+            <th scope="col" class="col-sm-2">Último Acceso</th>
+            <th scope="col" class="col-sm-1">Rol</th>
+            <th scope="col" class="col-sm-2">Acciones</th>
+        </tr>
+    </tfoot>
 
 </table>
