@@ -16,13 +16,14 @@
         <a href="#views/proveedores/proveedoresForm" class="btn btn-primary" ><i class="fas fa-plus-circle"></i> Agregar Registro</a>
     </div>
 </div>
-<table class="table table-sm table-striped table-hover mt-4">
+<table id="miTabla" class="table table-sm table-striped table-hover mt-4">
     <thead >
         <tr>
             <th scope="col" class="col-sm-2">Núm. Proveedor</th>
             <th scope="col" class="col-sm-5">Proveedor</th>
             <th scope="col" class="col-sm-3">Representante Legal</th>
             <th scope="col" class="col-sm-2"> </th>
+            <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </thead>
     <tbody class="table-group-divider">
@@ -42,6 +43,15 @@
             <?php endforeach; ?>
         <?php endif; ?>
     </tbody>
+    <tfoot>
+        <tr>
+            <th scope="col" class="col-sm-2">Núm. Proveedor</th>
+            <th scope="col" class="col-sm-5">Proveedor</th>
+            <th scope="col" class="col-sm-3">Representante Legal</th>
+            <th scope="col" class="col-sm-2"> </th>
+            <th scope="col" class="col-sm-2">Acciones</th>
+        </tr>
+    </tfoot>
 
 </table>
 

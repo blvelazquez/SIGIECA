@@ -26,7 +26,7 @@ $dataConst = $const->list();
                     <h5 class="modal-title fs-5"> <strong>Registro de Solicitud de Construcción</strong></h5>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="app/views/solicitudes/storeConstruccion.php" method="post" enctype="multipart/form-data">
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="idEspacio" class="form-label">Tipo de Construcción:</label>
@@ -40,7 +40,7 @@ $dataConst = $const->list();
                                 <label for="idPartida" class="form-label">Partida:</label>
                                 <select name="idPartida" id="idPartida" class="form-control">
                                     <?php foreach($dataPartidas as $resp): ?>
-                                        <option value="<?=$resp['idPartida'] ?>"><?=$resp['nombre_partida'] ?></option>
+                                        <option value="<?=$resp['idPartida'] ?>"><?=$resp['idPartida'].' '.$resp['nombre_partida'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
