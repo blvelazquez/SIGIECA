@@ -23,6 +23,8 @@
             $pass_encrypt = $id[0]['passwordUsuario'];
             if(password_verify($password, $pass_encrypt)){
                 $this->saveMessage($id,'LOGIN');
+                session_start();
+                $_SESSION['idUsuario'] = $id[0]['idUsuarios'];
             }else{
                 $this->saveMessage(false,'LOGIN');
                 $id= false;

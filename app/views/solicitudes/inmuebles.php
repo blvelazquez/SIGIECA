@@ -80,6 +80,7 @@ $dataPartidas = $partidas->list();
                             <textarea name="descripcion" id="descripcion" class="form-control" rows="10" required></textarea>
                         </fieldset>
                         <div class="d-flex justify-content-end modal-footer">
+                            <input type="hidden" name='tipo' id='tipo' value='2'>
                             <input type="hidden" name='accion' id='accion' value='guardar'>
                             <button type="submit" class="btn btn-warning ml-2"><i class="fas fa-save"></i> Guardar borrador</button>
                             <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Enviar</button>

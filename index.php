@@ -79,7 +79,11 @@ require_once("app/views/headerfooter/body.php");
 
     });
 </script>
-
+<script>
+    function setAccion(value) {
+        document.getElementById('accion').value = value;
+    }
+</script>
 
 <?php require_once("app/views/headerfooter/footer.php")?>
 
