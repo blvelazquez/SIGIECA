@@ -1,5 +1,9 @@
 <?php
-
+    require_once(__DIR__ . "/../../controllers/solicitudesController.php");
+    
+    $obj = new solicitudesController();
+    $data = $obj->list();
+    // print_r($data);
 ?>
 
 <div class="py-3 px-4">
