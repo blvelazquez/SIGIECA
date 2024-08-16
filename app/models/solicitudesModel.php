@@ -9,12 +9,19 @@
         }
 
         public function list(){
-            $stament = $this->PDO->prepare("SELECT * FROM sig_solicitudes");
+            $stament = $this->PDO->prepare("SELECT s.idSolicitud, u.nombreUsuario, u.apellidoPaternoUsuario, 
+                                            u.apellidoMaternoUsuario, s.idPartida, p.nombre_partida,
+                                            s.idProceso, pr.nombre_proceso, s.fecha_solicitud, s.tipo, 
+                                            s.descripcion, s.idEspacio, es.Descripcion as Descripcion_esp
+                                            FROM sig_solicitudes AS s
+                                            JOIN sig_usuarios AS u ON s.idUsuarios = u.idUsuarios
+                                            JOIN sig_partidas AS p ON s.idPartida = p.idPartida
+                                            JOIN sig_proceso AS pr ON s.idProceso = pr.idProceso
+                                            JOIN sig_espacios AS es ON s.idEspacio = es.idEspacio;");
             return ($stament->execute()) ? $stament->fetchAll() : false;
         }
 
         public function insert($idSolicitud, $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio) {
-
 
             $stament = $this->PDO->prepare("INSERT INTO sig_solicitudes (idSolicitud, idUsuarios, idPartida, idProceso, 
                                             fecha_solicitud, tipo, descripcion, idEspacio) 
@@ -28,7 +35,7 @@
             $stament->bindParam(":descripcion", $descripcion, PDO::PARAM_STR);
             $stament->bindParam(":idEspacio", $idEspacio, PDO::PARAM_STR);
 
-            return ($stament->execute()) ? $this->PDO->lastInsertId() : false ;
+            return ($stament->execute()) ? $idSolicitud : false ;
         }        
      }
 ?>
