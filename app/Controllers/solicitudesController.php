@@ -18,7 +18,7 @@
         public function save($idUsuario, $idEspacio, $idPartida, $idProceso, $descripcion, $tipo){
             // metodo para obtener el id de la solicitud
             $fecha_solicitud = date("y-m-d");
-            $id = $this->model->insert('S-ACA-001-24', $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio);
+            $id = $this->model->insert('S-ACA-003-24', $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio);
             return ($id!= false) ? header($this->location) : false;
         }        
     }
