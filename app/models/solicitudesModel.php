@@ -21,6 +21,13 @@
             return ($stament->execute()) ? $stament->fetchAll() : false;
         }
 
+        public function last($tipo){
+
+            $stament = $this->PDO->prepare("SELECT COUNT(*) as total FROM sig_solicitudes WHERE tipo = :tipo");
+            $stament->bindParam(":tipo", $tipo, PDO::PARAM_STR);
+            return ($stament->execute()) ? $stament->fetchAll() : false;            
+        }
+
         public function insert($idSolicitud, $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio) {
 
             $stament = $this->PDO->prepare("INSERT INTO sig_solicitudes (idSolicitud, idUsuarios, idPartida, idProceso, 
