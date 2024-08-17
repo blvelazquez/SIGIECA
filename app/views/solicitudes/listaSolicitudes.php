@@ -36,3 +36,62 @@
         </div>
     </div>
 </div>
+<div class="dropdown-divider"></div>
+<table id="miTabla" class="table table-sm table-striped table-hover mt-4" >
+    <thead >
+        <tr>
+            <th scope="col" class="text-center col-sm-2">Solicitud</th>
+            <th scope="col" class="text-center col-sm-1">Usuario</th>
+            <th scope="col" class="text-center col-sm-2">Partida</th>
+            <th scope="col" class="text-center col-sm-1">Proceso</th>
+            <th scope="col" class="text-center col-sm-1">Fecha de Solicitud</th>
+            <th scope="col" class="text-center col-sm-1">Tipo</th>
+            <th scope="col" class="text-center col-sm-2">Descripción</th>
+            <th scope="col" class="text-center col-sm-1">Espacio</th>
+            <th scope="col" class="text-center col-sm-2">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <?php if($data): ?>
+            <?php foreach($data as $resp): ?>
+                <tr>
+                    <td><?=$resp['idSolicitud'] ?></td>
+                    <td><?=$resp['nombreUsuario'].' '.$resp['apellidoPaternoUsuario'].' '.$resp['apellidoMaternoUsuario'] ?></td>
+                    <td><?=$resp['idPartida'].' '.$resp['nombre_partida'] ?></td>
+                    <td><?=$resp['idProceso'].' '.$resp['nombre_proceso']?></td>
+                    <td><?= date('Y-m-d', strtotime($resp['fecha_solicitud'])) ?></td>
+                    <td>
+                        <?= ($resp['tipo'] == 1) ? 'Construcción' : 
+                            (($resp['tipo'] == 2) ? 'Mantenimiento de inmuebles' : 
+                            (($resp['tipo'] == 3) ? 'Mantenimiento de equipo' : ''));
+                        ?>
+                    </td>
+                    <td><?=$resp['descripcion']?></td>
+                    <td><?=$resp['Descripcion_esp']?></td>
+                    <td>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   
+                            <a href="#" class="btn btn-sm btn-danger ml-2"> <i class="fas fa-trash"></i></a>
+                            <a href="#" class="btn btn-sm btn-success ml-2"> <i class="fas fa-eye"></i></a>
+                        </div>
+                    </td>                    
+                </tr>
+
+            <?php endforeach; ?>
+        <?php endif; ?>            
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="col" class="text-center col-sm-2">Solicitud</th>
+            <th scope="col" class="text-center col-sm-1">Usuario</th>
+            <th scope="col" class="text-center col-sm-2">Partida</th>
+            <th scope="col" class="text-center col-sm-1">Proceso</th>
+            <th scope="col" class="text-center col-sm-1">Fecha de Solicitud</th>
+            <th scope="col" class="text-center col-sm-1">Tipo</th>
+            <th scope="col" class="text-center col-sm-2">Descripción</th>
+            <th scope="col" class="text-center col-sm-1">Espacio</th>
+            <th scope="col" class="text-center col-sm-2">Acciones</th>
+        </tr>
+    </tfoot>
+
+</table>

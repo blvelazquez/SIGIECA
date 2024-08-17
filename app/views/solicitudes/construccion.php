@@ -61,9 +61,12 @@ $dataConst = $const->list();
 
 
                         <div class="d-flex justify-content-end modal-footer">
-                            <input type="hidden" name='accion' id='accion' value='guardar'>
-                            <button type="submit" class="btn btn-warning ml-2"><i class="fas fa-save"></i> Guardar borrador</button>
-                            <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Enviar</button>
+                            <input type="hidden" name='tipo' id='tipo' value='1'>
+                            <input type="hidden" name='accion' id='accion' value=''>
+                            <button type="submit" class="btn btn-warning ml-2" onclick="setAccion('guardar')">
+                                <i class="fas fa-save"></i> Guardar borrador</button>
+                            <button type="submit" class="btn btn-primary ml-2" onclick="setAccion('enviar')">
+                                <i class="fas fa-save"></i> Enviar</button>                        
                         </div>
                     </form>                
                 </div>
