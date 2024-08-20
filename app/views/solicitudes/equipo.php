@@ -81,9 +81,11 @@ echo("Hola soy mantenimiento de equipo")
                             <textarea name="descripcion" id="descripcion" class="form-control" rows="10" required></textarea>
                         </fieldset>
                         <div class="d-flex justify-content-end modal-footer">
-                            <input type="hidden" name='accion' id='accion' value='guardar'>
-                            <button type="submit" class="btn btn-warning ml-2"><i class="fas fa-save"></i> Guardar borrador</button>
-                            <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-save"></i> Enviar</button>
+                            <input type="hidden" name='accion' id='accion' value=''>
+                            <button type="submit" class="btn btn-warning ml-2" onclick="setAcccion('guardar')">
+                                <i class="fas fa-save"></i> Guardar borrador</button>
+                            <button type="submit" class="btn btn-primary ml-2" onclick="setAccion('enviar')">
+                                <i class="fas fa-save"></i> Enviar</button>
                         </div>
                     </form>
                 </div>

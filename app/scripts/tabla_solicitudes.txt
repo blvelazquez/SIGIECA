@@ -6,5 +6,6 @@ CREATE TABLE sig_solicitudes (
   fecha_solicitud DATETIME,
   tipo BOOL,
   descripcion NVARCHAR(500),
+  idEspacio INTEGER,
   PRIMARY KEY(idSolicitud)
 );

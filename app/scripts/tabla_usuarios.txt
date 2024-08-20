@@ -11,6 +11,12 @@ CREATE TABLE sig_usuarios (
   fechaRegistroUsuario DATE NULL,
   ultimoAccesoUsuario DATE NULL,
   rolUsuario VARCHAR(20) NULL,
+  idCCT varchar(10) NOT NULL,
   PRIMARY KEY(idUsuarios)
 );
+
+
+INSERT INTO `sig_usuarios` (idUsuarios, loginUsuario, passwordUsuario, email, nombreusuario, apellidoPaternoUsuario, apellidoMaternoUsuario, fechaRegistroUsuario, ultimoAccesoUsuario, rolUsuario, idCCT)
+VALUES
+(1, 'gvelazquezd', '$2y$10$ROgdAAdqjcuwzTPJnLM45Oon1Ijjyy/9Jo.R.lhKyQvduWmTZhzsK', 'gvelazquezd@correo.com', 'Diego', 'Gutierrez', 'Velázquez', '2024-07-17', '2024-07-17', '1', '11EIC0008I'),
 
