@@ -1,8 +1,11 @@
 <?php
 
     require_once(__DIR__ . "/../../controllers/rolController.php");
+    require_once(__DIR__ . "/../../controllers/plantelController.php");
     
     $obj = new rolController();
+    $plantel = new plantelController();
+    $listPlantel = $plantel->list();
     $data = $obj->list();
 ?>
  
@@ -67,7 +70,17 @@
                                     <?php endforeach; ?>
                                 </select>
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                                <label for="plantel" class="form-label">Plantel:</label>
+
+                                <select name="plantel" id="plantel" class="form-control">
+                                    <option value="">Seleccione un plantel</option> <!-- Opción en blanco -->
+                                    <?php foreach($listPlantel as $resp): ?>
+                                        <option value="<?=$resp['idCCT'] ?>"><?=$resp['plantel'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+
+                            </div>
                             <div class="col"></div>
                         </div>
 
