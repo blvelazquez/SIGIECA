@@ -23,9 +23,10 @@
             <th scope="col" class="col-sm-1">Usuario</th>
             <th scope="col" class="col-sm-3">Nombre</th>
             <th scope="col" class="col-sm-2">Email</th>
-            <th scope="col" class="col-sm-3">Fecha de Registro</th>
-            <th scope="col" class="col-sm-2">Último Acceso</th>
+            <th scope="col" class="col-sm-1">Fecha de Registro</th>
+            <th scope="col" class="col-sm-1">Último Acceso</th>
             <th scope="col" class="col-sm-1">Rol</th>
+            <th scope="col" class="col-sm-4">Plantel</th>
             <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </thead>
@@ -40,6 +41,7 @@
                     <td><?=$resp['fechaRegistroUsuario'] ?></td>
                     <td><?=$resp['ultimoAccesoUsuario'] ?></td>
                     <td><?=$resp['nombre_Rol'] ?></td>
+                    <td><?=$resp['plantel'] ?></td>
                     <td>
                         <div class="btn-group">
                             <a href="#views/usuarios/editForm.php?id=<?= $resp['idUsuarios']?>" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   
@@ -56,9 +58,10 @@
             <th scope="col" class="col-sm-1">Usuario</th>
             <th scope="col" class="col-sm-3">Nombre</th>
             <th scope="col" class="col-sm-2">Email</th>
-            <th scope="col" class="col-sm-3">Fecha de Registro</th>
-            <th scope="col" class="col-sm-2">Último Acceso</th>
+            <th scope="col" class="col-sm-1">Fecha de Registro</th>
+            <th scope="col" class="col-sm-1">Último Acceso</th>
             <th scope="col" class="col-sm-1">Rol</th>
+            <th scope="col" class="col-sm-4">Plantel</th>
             <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </tfoot>

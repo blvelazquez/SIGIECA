@@ -15,11 +15,11 @@
             return ($this->model->list()) ? $this->model->list() : false;
         }
 
-        public function save($fname, $lname, $name, $user, $pass, $email, $rol){
+        public function save($fname, $lname, $name, $user, $pass, $email, $rol, $idPlantel){
             $dateRegister = date("y-m-d");
             $lastAcces = date("y-m-d");
             $pass = password_hash($pass, PASSWORD_BCRYPT);
-            $id = $this->model->insert($fname, $lname, $name, $user, $pass, $email, $rol, $dateRegister, $lastAcces);
+            $id = $this->model->insert($fname, $lname, $name, $user, $pass, $email, $rol, $dateRegister, $lastAcces, $idPlantel);
 
             return ($id!= false) ? header($this->location) : false;
         }
@@ -33,8 +33,8 @@
             return($this->model->show($idUsuario)!= false) ? $this->model->show($idUsuario) : false;
         }
 
-        public function update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces){
-            $id = $this->model->update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces);
+        public function update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces, $idPlantel){
+            $id = $this->model->update($idUsuario, $fname, $lname, $name, $user, $pass, $email, $rol, $fechaReg, $fechaAcces, $idPlantel);
             return($id != false) ? header($this->location) : false;
         }
 

@@ -23,9 +23,13 @@
                 '3' => 'SME'
             ];
             
+            
             // Asignación con un valor por defecto
             $tipoSolicitud = $tipos[$tipo] ?? 'S';
-            echo("<br>".$tipoSolicitud);
+            
+            //traer iniciales
+            $ini = $this->model->iniciales($idUsuario);
+
 
             $row = $this->model->last($tipo);
             
@@ -36,15 +40,17 @@
             //     $cons='001';
             //     echo("<br> No se encontró ningún registro.".$cons);
             // }
-            
             $cons = str_pad($row[0]['total'] + 1, 3, '0', STR_PAD_LEFT); // Asegura que tenga 3 dígitos, con ceros a la izquierda
 
-            // echo("<br>".$cons);
+
             $añoActual = date('y'); // Obtiene los últimos dos dígitos del año actual
             
             $fecha_solicitud = date("y-m-d");
-            // $id = $this->model->insert('SCO-ACA-002-24', $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio);
-            // return ($id!= false) ? header($this->location) : false;
+
+            $idSolicitud = $tipoSolicitud.'-'.$ini[0]['iniciales'].'-'.$cons.'-'.$añoActual;
+
+            $id = $this->model->insert($idSolicitud, $idUsuario, $idPartida, $idProceso, $fecha_solicitud, $tipo, $descripcion, $idEspacio);
+            return ($id!= false) ? header($this->location) : false;
         }        
     }
 ?>

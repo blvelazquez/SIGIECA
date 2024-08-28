@@ -43,6 +43,14 @@
             $stament->bindParam(":idEspacio", $idEspacio, PDO::PARAM_STR);
 
             return ($stament->execute()) ? $idSolicitud : false ;
-        }        
+        } 
+        
+        public function iniciales($id){
+            $stament = $this->PDO->prepare("SELECT sp.iniciales FROM sig_usuarios su
+                                            JOIN sig_plantel sp ON su.idCCT = sp.idCCT
+                                            WHERE su.idUsuarios = :id");
+            $stament->bindParam(":id", $id, PDO::PARAM_STR);
+            return ($stament->execute()) ? $stament->fetchAll() : false;                  
+        }
      }
 ?>

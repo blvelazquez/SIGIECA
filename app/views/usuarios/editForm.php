@@ -3,20 +3,24 @@
 //Este es un comentario
     require_once(__DIR__ . "/../../controllers/usuariosController.php");
     require_once(__DIR__ . "/../../controllers/rolController.php");
+    require_once(__DIR__ . "/../../controllers/plantelController.php");
     $obj = new usuariosController();
     $objRol = new rolController();
-
+    $plantel = new plantelController();
+    
+    
     // Dividir la cadena en partes usando el punto como delimitador
     $parts = explode('.', $_GET['id']);
     //print_r($parts);
     $idUsuario = $parts[0];
-
+    
     $data = $obj->show($idUsuario);
     $resp = $data[0];
     // print_r($resp);
-
+    
     
     $dataRol = $objRol->list();
+    $listPlantel = $plantel->list();
     // print_r($dataRol);
 ?>
 
@@ -85,7 +89,16 @@
                                     <?php endforeach; ?>
                                 </select>
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                                <label for="plantel" class="form-label">Plantel:</label>
+
+                                <select name="plantel" id="plantel" class="form-control">
+                                <option value="" <?= empty($resp['idCCT']) ? 'selected' : '' ?>>Seleccione un plantel</option>
+                                    <?php foreach($listPlantel as $respPlantel): ?>
+                                        <option value="<?= $respPlantel['idCCT']?>" <?= $resp['idCCT'] == $respPlantel['idCCT'] ? 'selected' : ''?>><?= $respPlantel['plantel']?></option>
+                                    <?php endforeach; ?>
+                                </select>                                
+                            </div>
                             <div class="col"></div>
                         </div>
 
