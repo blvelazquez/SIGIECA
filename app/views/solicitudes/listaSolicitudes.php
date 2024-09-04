@@ -3,7 +3,7 @@
     
     $obj = new solicitudesController();
     $data = $obj->list();
-    // print_r($data);
+//    print_r($data);
 ?>
 
 <div class="py-3 px-4">
@@ -70,7 +70,7 @@
                     <td><?=$resp['Descripcion_esp']?></td>
                     <td>
                         <div class="btn-group">
-                            <a href="#" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   
+                            <a href="#views/solicitudes/editFormConstruccion.php?id=<?= $resp['idSolicitud']?>" class="btn btn-sm btn-warning edit-btn"><i class="fas fa-pencil-alt"></i></a>   
                             <a href="#" class="btn btn-sm btn-danger ml-2"> <i class="fas fa-trash"></i></a>
                             <a href="#" class="btn btn-sm btn-success ml-2"> <i class="fas fa-eye"></i></a>
                         </div>

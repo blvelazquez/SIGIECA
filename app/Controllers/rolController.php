@@ -11,5 +11,9 @@
         public function list(){
             return ($this->model->list()) ? $this->model->list() : false;
         }
+
+        public function listId($idRol){
+            return ($this->model->listId($idRol)!= false) ? $this->model->listId($idRol) : false;
+        }
     }
 ?>

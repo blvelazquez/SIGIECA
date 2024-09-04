@@ -30,7 +30,6 @@
             //traer iniciales
             $ini = $this->model->iniciales($idUsuario);
 
-
             $row = $this->model->last($tipo);
             
             // if (!empty($row) && isset($row[0]['total'])) {

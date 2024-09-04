@@ -25,6 +25,7 @@
                 $this->saveMessage($id,'LOGIN');
                 session_start();
                 $_SESSION['idUsuario'] = $id[0]['idUsuarios'];
+                $_SESSION['rolUsuario'] = $id[0]['rolUsuario'];
             }else{
                 $this->saveMessage(false,'LOGIN');
                 $id= false;

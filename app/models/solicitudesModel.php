@@ -15,8 +15,8 @@
                                             s.descripcion, s.idEspacio, es.Descripcion as Descripcion_esp
                                             FROM sig_solicitudes AS s
                                             JOIN sig_usuarios AS u ON s.idUsuarios = u.idUsuarios
-                                            JOIN sig_partidas AS p ON s.idPartida = p.idPartida
-                                            JOIN sig_proceso AS pr ON s.idProceso = pr.idProceso
+                                            LEFT JOIN sig_partidas AS p ON s.idPartida = p.idPartida
+                                            LEFT JOIN sig_proceso AS pr ON s.idProceso = pr.idProceso
                                             JOIN sig_espacios AS es ON s.idEspacio = es.idEspacio;");
             return ($stament->execute()) ? $stament->fetchAll() : false;
         }

@@ -58,6 +58,7 @@ require_once("app/views/headerfooter/body.php");
     </div>
     
 <?php require_once("app/views/modals/deleteModal.php"); ?>
+<?php require_once("app/views/modals/borradorConstruccion.php"); ?>
 <script>
     $(document).ready(function(){
       
@@ -72,6 +73,14 @@ require_once("app/views/headerfooter/body.php");
         $('#deleteModalProveedores').on('shown.bs.modal', event =>{
             let button = event.relatedTarget;
             let id = button.getAttribute('data-id');
+            
+            let inputId = $('.modal-footer #id');
+            inputId.val(id);
+        });
+
+        $('#borradorModalConstruccion').on('shown.bs.modal', event =>{
+            let button = event.relatedTarget;
+            let id = button.getAttribute('data-id', );
             
             let inputId = $('.modal-footer #id');
             inputId.val(id);
