@@ -11,7 +11,7 @@
         }
 
         public function login($usuario, $password){
-            $stament = $this->PDO->prepare("SELECT idUsuarios, loginUsuario, passwordUsuario  FROM sig_usuarios 
+            $stament = $this->PDO->prepare("SELECT idUsuarios, loginUsuario, passwordUsuario, rolUsuario  FROM sig_usuarios 
                                             where loginUsuario = :usuario");
             $stament->bindParam(":usuario", $usuario);
             return ($stament->execute()) ? $stament->fetchAll() : false;
