@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `sig_equipo_dta`
 --
-///// editada
+///// edit
 CREATE TABLE `sig_equipo_dta` (
   `idEquipoDTA` int(11) NOT NULL,
   `Descripcion` varchar(60) NOT NULL,

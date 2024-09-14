@@ -1,4 +1,4 @@
-////// editada
+////// edit
 CREATE TABLE sig_solicitudes (
   idSolicitud VARCHAR(20)  NOT NULL,
   idUsuarios INTEGER,
