@@ -8,4 +8,13 @@ CREATE TABLE sig_solicitudes (
   descripcion NVARCHAR(500),
   idEspacio INTEGER,
   PRIMARY KEY(idSolicitud)
+
 );
+
+sig_solcitud_notas(
+  idSolicitud
+  idUsuario_sol
+  idUsuario_aut
+  nota 
+  fecha_nota
+)
