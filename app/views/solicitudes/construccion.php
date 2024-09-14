@@ -69,17 +69,17 @@ $dataRol = $objRol->listId($rolId);
                         <textarea name="descripcion" id="descripcion" class="form-control" rows="10" required></textarea>
                         </fieldset>
 
-
-
                         <div class="d-flex justify-content-end modal-footer">
                             <input type="hidden" name='tipo' id='tipo' value='1'>
                             <input type="hidden" name='accion' id='accion' value=''>
-                            <a href="#" class="btn btn-sm btn-danger ml-2" data-toggle="modal" data-target="#borradorModalConstruccion" 
-                            data-tipo=""></i></a>
-                            <button type="submit" class="btn btn-warning ml-2" onclick="setAccion('guardar')">
-                                <i class="fas fa-save"></i> Guardar borrador</button>
+
+                            <!-- Botón que abre el modal y define la acción a 'guardar' -->
+                            <button type="button" class="btn btn-warning ml-2" data-toggle="modal" data-target="#borradorModalConstruccion" onclick="setAccion('guardar')">
+                                <i class="fas fa-save"></i> Guardar borrador
+                            </button>
                             <button type="submit" class="btn btn-primary ml-2" onclick="setAccion('enviar')">
-                                <i class="fas fa-save"></i> Enviar</button>                        
+                                <i class="fas fa-save"></i> Enviar
+                            </button>                        
                         </div>
                     </form>                
                 </div>

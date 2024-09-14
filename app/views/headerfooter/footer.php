@@ -45,25 +45,29 @@
             </div>
         </div>
     </div>
-<!-- Bootstrap core JavaScript-->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <!-- <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
-    <!-- Custom scripts for all pages-->
-    <script src="assets/js/sb-admin-2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><script>
+    <!-- jQuery (debe ir antes de Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <!-- Popper.js (necesario para Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="assets/js/sb-admin-2.min.js"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
     <!-- -->
     <!-- DataTables -->
     <script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.1.3/js/dataTables.bootstrap4.js"></script>
     <!--  -->
-
     
 </body>
 </html>
