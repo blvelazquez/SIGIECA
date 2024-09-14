@@ -4,4 +4,5 @@ CREATE TABLE sig_rol (
   descripcion_Rol VARCHAR(100) NULL,
   permisos_Rol VARCHAR(20) NULL,
   PRIMARY KEY(idRol)
+  cve_Rol INTEGER UNSIGNED NOT NULL
 );

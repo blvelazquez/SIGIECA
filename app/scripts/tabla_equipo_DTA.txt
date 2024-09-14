@@ -29,7 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `sig_equipo_dta` (
   `idEquipoDTA` int(11) NOT NULL,
-  `Descripcion` varchar(60) NOT NULL
+  `Descripcion` varchar(60) NOT NULL,
+  modelo varchar(60),
+  numero_serie varchar(30),
+  numero_activo varchar(30),
+  marca varchar(60),
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
