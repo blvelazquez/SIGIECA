@@ -88,6 +88,27 @@ require_once("app/views/headerfooter/body.php");
 
     });
 </script>
+
+<script>
+    document.getElementById('confirmButton').addEventListener('click', function () {
+        // Obtener el formulario
+        let form = document.querySelector('form[action="app/views/solicitudes/storeConstruccion.php"]');
+
+        // Verificar si el formulario es válido
+        if (form.checkValidity()) {
+            // Si es válido, cerrar el modal y enviar el formulario
+            $('#borradorModalConstruccion').modal('hide');
+            form.submit();
+        } else {
+            // Si no es válido, cerrar el modal primero
+            $('#borradorModalConstruccion').modal('hide');
+
+            // Mostrar mensajes de error de validación nativos del navegador
+            form.reportValidity();
+        }
+    });
+</script>
+
 <script>
     function setAccion(value) {
         document.getElementById('accion').value = value;

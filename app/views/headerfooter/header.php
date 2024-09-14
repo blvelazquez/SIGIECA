@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard SIGIECA</title>
@@ -22,6 +23,11 @@
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- script sections -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+    
+   <!-- script sections -->
 
 </head>
