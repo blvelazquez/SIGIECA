@@ -10,11 +10,3 @@ CREATE TABLE sig_solicitudes (
   PRIMARY KEY(idSolicitud)
 
 );
-
-sig_solcitud_notas(
-  idSolicitud
-  idUsuario_sol
-  idUsuario_aut
-  nota 
-  fecha_nota
-)
