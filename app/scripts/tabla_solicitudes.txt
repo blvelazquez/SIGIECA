@@ -11,3 +11,4 @@ CREATE TABLE sig_solicitudes (
   PRIMARY KEY(idSolicitud)
   idCCT VARCHAR(10) NOT NULL
 );
+
