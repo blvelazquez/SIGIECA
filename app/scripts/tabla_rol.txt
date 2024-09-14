@@ -1,7 +1,9 @@
+//// editada
 CREATE TABLE sig_rol (
  idRol INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nombre_Rol VARCHAR(45) NULL,
   descripcion_Rol VARCHAR(100) NULL,
   permisos_Rol VARCHAR(20) NULL,
   PRIMARY KEY(idRol)
+  cve_Rol INTEGER UNSIGNED NOT NULL
 );

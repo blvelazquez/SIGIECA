@@ -1,3 +1,4 @@
+////// editada
 CREATE TABLE sig_solicitudes (
   idSolicitud VARCHAR(20)  NOT NULL,
   idUsuarios INTEGER,
@@ -8,13 +9,5 @@ CREATE TABLE sig_solicitudes (
   descripcion NVARCHAR(500),
   idEspacio INTEGER,
   PRIMARY KEY(idSolicitud)
-
+  idCCT VARCHAR(10) NOT NULL
 );
-
-sig_solcitud_notas(
-  idSolicitud
-  idUsuario_sol
-  idUsuario_aut
-  nota 
-  fecha_nota
-)
