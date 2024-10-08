@@ -22,7 +22,7 @@
             <th scope="col" class="col-sm-2">Núm. Proveedor</th>
             <th scope="col" class="col-sm-5">Proveedor</th>
             <th scope="col" class="col-sm-3">Representante Legal</th>
-            <th scope="col" class="col-sm-2"> </th>
+            <!-- <th scope="col" class="col-sm-2"> </th> -->
             <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </thead>
@@ -48,7 +48,7 @@
             <th scope="col" class="col-sm-2">Núm. Proveedor</th>
             <th scope="col" class="col-sm-5">Proveedor</th>
             <th scope="col" class="col-sm-3">Representante Legal</th>
-            <th scope="col" class="col-sm-2"> </th>
+            <!-- <th scope="col" class="col-sm-2"> </th> -->
             <th scope="col" class="col-sm-2">Acciones</th>
         </tr>
     </tfoot>
