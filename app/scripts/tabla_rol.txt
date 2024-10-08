@@ -3,7 +3,16 @@ CREATE TABLE sig_rol (
  idRol INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nombre_Rol VARCHAR(45) NULL,
   descripcion_Rol VARCHAR(100) NULL,
-  permisos_Rol VARCHAR(20) NULL,
   PRIMARY KEY(idRol)
-  cve_Rol INTEGER UNSIGNED NOT NULL
+  cve_Rol VARCHAR(20) NULL
 );
+
+
+INSERT INTO   sig_rol(idRol, nombre_Rol, descripcion_Rol, cve_Rol)
+values
+(0, 'Admin', 'Administrador de la Aplicacion', 'ADM'),
+(0, 'Solicitante', 'Supervisor de Obra', 'SOL'),
+(0, 'Analista de Infraestructura', 'Analista', 'AIN'),
+(0, 'Especialista de Infraestructura', 'Espacialista', 'EIN'),
+(0, 'Monitor', 'Monitor', 'MON'),
+(0, 'Consultor', 'Consultor', 'CON');

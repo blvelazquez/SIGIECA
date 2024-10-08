@@ -49,7 +49,7 @@ $dataPartidas = $partidas->list();
                                 <label for="idPartida" class="form-label">Partida:</label>
                                 <select name="idPartida" id="idPartida" class="form-control">
                                     <?php foreach($dataPartidas as $resp): ?>
-                                        <option value="<?=$resp['idPartida'] ?>"><?=$resp['nombre_partida'] ?></option>
+                                        <option value="<?=$resp['idPartida'] ?>"><?=$resp['idPartida'].' '.$resp['nombre_partida'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
