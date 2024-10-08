@@ -37,6 +37,7 @@ require_once("app/views/headerfooter/body.php");
                 function loadPage(pageName) {
                     const dynamicContent = document.getElementById("dynamic-content");
                     const xhr = new XMLHttpRequest();
+                    // xhr.open("GET", `/sigieca/app/${pageName}.php`, true); // Ruta a la página a cargar
                     xhr.open("GET", `/sigieca/app/${pageName}.php`, true); // Ruta a la página a cargar
                     xhr.onreadystatechange = function () {
                         if (xhr.readyState === 4 && xhr.status === 200) {
