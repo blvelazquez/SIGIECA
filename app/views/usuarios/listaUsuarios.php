@@ -7,7 +7,7 @@
 ?>
 
 <div class="py-3 px-4">
-            <h2 class="h3 mb-0 text-gray-800 text-center">Lista de Usuarios</h2>
+    <h2 class="h3 mb-0 text-gray-800 text-center">Lista de Usuarios</h2>
 </div>
 <hr>
 <div class="row justify-content-end">
