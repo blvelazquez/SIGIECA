@@ -34,7 +34,7 @@ $dataRol = $objRol->listId($rolId);
                 </div>
                 <div class="modal-body">
 
-                <!-- Nav tabs -->
+                    <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-justified" id="formTabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Pestaña 1</a>
@@ -48,7 +48,6 @@ $dataRol = $objRol->listId($rolId);
                         <li class="nav-item">
                             <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Pestaña 4</a>
                         </li>
-
                     </ul>
 
                      <!-- Formulario con pestañas -->
@@ -56,7 +55,7 @@ $dataRol = $objRol->listId($rolId);
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <!-- Pestaña 1 -->
-                             <br>
+                            <br>
                             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                                 <div class="row mb-3">
                                     <div class="col">
@@ -68,23 +67,23 @@ $dataRol = $objRol->listId($rolId);
                                         </select>
                                     </div>
                                     <div class="col">
-                                    <?php if($dataRol[0]['cve_Rol'] == 'ADM'):?>
-                                        <label for="idPartida" class="form-label">Partida:</label>
-                                        <select name="idPartida" id="idPartida" class="form-control">
-                                            <?php foreach($dataPartidas as $resp): ?>
-                                                <option value="<?=$resp['idPartida'] ?>"><?=$resp['idPartida'].' '.$resp['nombre_partida'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    <?php endif ?>
+                                        <?php if($dataRol[0]['cve_Rol'] == 'ADM'):?>
+                                            <label for="idPartida" class="form-label">Partida:</label>
+                                            <select name="idPartida" id="idPartida" class="form-control">
+                                                <?php foreach($dataPartidas as $resp): ?>
+                                                    <option value="<?=$resp['idPartida'] ?>"><?=$resp['idPartida'].' '.$resp['nombre_partida'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        <?php endif ?>
                                     </div>
                                     <div class="col">
-                                    <?php if($dataRol[0]['cve_Rol'] == 'ADM'):?>
-                                        <label for="idProceso" class="form-label">Proceso:</label>
-                                        <select name="idProceso" id="idProceso" class="form-control">
-                                            <?php foreach($dataProcesos as $resp): ?>
-                                                <option value="<?=$resp['idProceso'] ?>"><?=$resp['idProceso'].' '.$resp['nombre_proceso'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select> 
+                                        <?php if($dataRol[0]['cve_Rol'] == 'ADM'):?>
+                                            <label for="idProceso" class="form-label">Proceso:</label>
+                                            <select name="idProceso" id="idProceso" class="form-control">
+                                                <?php foreach($dataProcesos as $resp): ?>
+                                                    <option value="<?=$resp['idProceso'] ?>"><?=$resp['idProceso'].' '.$resp['nombre_proceso'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select> 
                                         <?php endif ?>                               
                                     </div>
                                 </div>
@@ -92,14 +91,17 @@ $dataRol = $objRol->listId($rolId);
                                     <legend class="w-auto h6 text-dark">Descripción:</legend>
                                     <textarea name="descripcion" id="descripcion" class="form-control" rows="10" required></textarea>
                                 </fieldset>
+
+                                <div class="mb-3">
+                                    <label for="upfile" class="form-label">Subir Archivo:</label>
+                                    <input type="file" name="upfile" id="upfile" class="form-control" accept="application/pdf">
+                                </div>
+
                             </div>
                             
                             <!-- Pestaña 2 -->
                             <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-                                <fieldset class="border p-2 mb-3">
-                                    <legend class="w-auto h6 text-dark">Descripción:</legend>
-                                    <textarea name="descripcion" id="descripcion" class="form-control" rows="10" required></textarea>
-                                </fieldset>
+                                <h3>En contrucción...2!</h3>
                             </div>
 
                             <!-- Pestaña 3 -->
@@ -114,7 +116,6 @@ $dataRol = $objRol->listId($rolId);
 
                         </div>
 
-                        
                         <!-- Botón de envío -->
                         <div class="d-flex justify-content-end modal-footer">
                             <input type="hidden" name='tipo' id='tipo' value='1'>

@@ -94,7 +94,7 @@ require_once("app/views/headerfooter/body.php");
     document.getElementById('confirmButton').addEventListener('click', function () {
         // Obtener el formulario
         let form = document.querySelector('form[action="app/views/solicitudes/storeConstruccion.php"]');
-
+        
         // Verificar si el formulario es válido
         if (form.checkValidity()) {
             // Si es válido, cerrar el modal y enviar el formulario
@@ -107,6 +107,7 @@ require_once("app/views/headerfooter/body.php");
             // Mostrar mensajes de error de validación nativos del navegador
             form.reportValidity();
         }
+
     });
 </script>
 
